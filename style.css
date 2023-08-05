@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Poppins;
-  overflow-y: hidden;
 }
 
 section {
@@ -136,14 +135,18 @@ li a:hover {
   color: #111;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 350px) {
+
   h1 {
-    font-size: 48px;
+    font-size: 36px !important;
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 28px !important;
   }
+}
+
+@media (max-width: 375px) {
 
   span {
     font-size: 12px;
@@ -154,9 +157,18 @@ li a:hover {
   }
 }
 
-@media (max-width: 425px) {
-  section {
-    height: auto;
+@media (max-width: 461px) {
+
+  .sign-up {
+    height: 95vh;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 32px;
   }
 
   .sign-up {
