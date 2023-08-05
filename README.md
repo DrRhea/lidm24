@@ -29,6 +29,6 @@ Feel free to explore the code and design to learn about the implementation detai
 
 ## Contact
 
-If you have any questions or feedback, feel free to reach out to me at [your.email@example.com](mailto:your.email@example.com).
+If you have any questions or feedback, feel free to reach out to me at [ajagadditha@gmail.com](mailto:ajagadditha@gmail.com).
 
 Let's connect and explore the world of web development together!
