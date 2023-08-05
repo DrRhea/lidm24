@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+section {
+  display: flex;
+  height: 95vh;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 120px 72px;
+  gap: 56px;
+}
+
+h1 {
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.sign-up__btn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.header {
+  width: 100%;
+  justify-self: flex-start;
+}
+
+.google, 
+.apple,
+.login {
+  border: 1px solid #333;
+  background: #fff;
+  transition: .15s ease-in-out;
+}
+
+.google:hover, 
+.apple:hover,
+.login:hover {
+  background: #111;
+  color: white;
+  border: none;
+  transform: scale(.98);
+}
+
+.email {
+  background: #111;
+  color: #fff;
+  font-size: 20px;
+  transition: .15s ease-in-out;
+}
+
+.email:hover {
+  background: #2a2a2a;
+  color: #fff;
+  transform: scale(.98);
+}
+
+.login {
+  font-size: 20px;
+}
+
+a {
+  color: #000;
+}
+
+.or {
+  text-align: center;
+  color: #666;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+button {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  height: 64px;
+  border: none;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+p {
+  color: #333;
+  font-size: 18px;
+  font-weight: 500; 
+}
+
+footer {
+  display: flex;
+  height: 5vh;
+  align-items: center;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+}
+
+li a{
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+li a:hover {
+  color: #111;
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  span {
+    font-size: 12px;
+  }
+
+  footer ul li a {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 425px) {
+  section {
+    height: auto;
+  }
+
+  .sign-up {
+    padding: 60px 35px;
+  }
+}
+
+@media (max-width: 788px) {
+  
+  .main {
+    display: none;
+  }
+  
+  ul li {
+    display: none;
+  }
+
+  li:last-child {
+    display: block;
+  }
+
+  footer ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1226px) {
+  .sign-up {
+    align-self: center;
+  }
+
+  .main { 
+    max-width: 50vw;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  .google,
+  .apple,
+  .email,
+  .login {
+    font-size: 16px
+  }
+
+  ul li a{ 
+    font-size: 10px;
+  }
+  .sign-up {
+    padding: 60px 35px;
+  }
+}
