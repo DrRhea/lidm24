@@ -9,7 +9,7 @@
 
 section {
   display: flex;
-  height: 95vh;
+  min-height: 100vh;
 }
 
 .sign-up {
@@ -45,7 +45,7 @@ h2 {
   justify-self: flex-start;
 }
 
-.google, 
+.google,
 .apple,
 .login {
   border: 1px solid #333;
@@ -53,7 +53,7 @@ h2 {
   transition: .15s ease-in-out;
 }
 
-.google:hover, 
+.google:hover,
 .apple:hover,
 .login:hover {
   background: #111;
@@ -105,13 +105,13 @@ button {
 p {
   color: #333;
   font-size: 18px;
-  font-weight: 500; 
+  font-weight: 500;
 }
 
 footer {
   display: flex;
-  height: 5vh;
   align-items: center;
+  padding: 10px 0;
 }
 
 ul {
@@ -124,7 +124,7 @@ li {
   list-style: none;
 }
 
-li a{
+li a {
   text-decoration: none;
   color: #666;
   font-size: 14px;
@@ -159,10 +159,6 @@ li a:hover {
 
 @media (max-width: 461px) {
 
-  .sign-up {
-    height: 95vh;
-  }
-
   h1 {
     font-size: 40px;
   }
@@ -171,17 +167,17 @@ li a:hover {
     font-size: 32px;
   }
 
-  .sign-up {
+  section .sign-up {
     padding: 60px 35px;
   }
 }
 
 @media (max-width: 788px) {
-  
+
   .main {
     display: none;
   }
-  
+
   ul li {
     display: none;
   }
@@ -198,9 +194,10 @@ li a:hover {
 @media (max-width: 1226px) {
   .sign-up {
     align-self: center;
+    padding: 60px 35px;
   }
 
-  .main { 
+  .main {
     max-width: 50vw;
     object-fit: cover;
     text-align: center;
@@ -213,10 +210,7 @@ li a:hover {
     font-size: 16px
   }
 
-  ul li a{ 
+  ul li a {
     font-size: 10px;
-  }
-  .sign-up {
-    padding: 60px 35px;
   }
 }
